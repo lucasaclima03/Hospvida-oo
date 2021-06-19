@@ -90,7 +90,7 @@
       function doNothing() {}
     </script>
     <script async
-    src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=<?php echo $chave ?>&callback=initMap">
     </script>
   </body>
 </html>
