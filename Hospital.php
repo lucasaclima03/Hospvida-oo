@@ -1,11 +1,18 @@
 <?php
-class Hospitais {
+class Hospital {
+    private $id;
     private $nome;
     private $endereco;
     private $lat;
     private $lng;
     private $observacoes;
 
+    public function getId(){
+        return $this->id;
+    }
+    public function setId($nome){
+        $this->nome = $nome;
+    }
     public function getNome(){
         return $this->nome;
     }

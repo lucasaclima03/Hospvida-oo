@@ -28,7 +28,7 @@
                     <a class="nav-link" href="cadastrar.php">Cadastro</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Mapa</a>
+                    <a class="nav-link" href="mapa.php">Mapa</a>
                     </li>                    
                 </ul>
             </div>

@@ -1,6 +1,5 @@
 <?php
 include 'css.php';
-include 'config.php';
 ?>
 <div class = container>
 <h1>Hospitais</h1>
@@ -28,7 +27,7 @@ include 'config.php';
     <input type="text" class="form-control" name = "observacoes">
   </div>
   
-  <button type="submit" class="btn btn-primary">Cadastrar</button>
+  <button type="submit" class="btn btn-primary" name = "cadastrar">Cadastrar</button>
 </form>
 
 
