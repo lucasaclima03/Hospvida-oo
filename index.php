@@ -22,7 +22,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Hospitais</a>
+                    <a class="nav-link active" aria-current="page" href="lista.php">Hospitais</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link" href="cadastrar.php">Cadastro</a>
