@@ -1,7 +1,7 @@
 <?php
-include 'css.php';
-include 'Conexao.php';
-include 'HospitalDAO.php';
+require_once 'style/css.php';
+require_once 'Conexao.php';
+require_once 'dao/HospitalDAO.php';
 $dao = new HospitalDAO($pdo);
 ?>
 <div>

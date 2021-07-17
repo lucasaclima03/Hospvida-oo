@@ -1,6 +1,7 @@
 <?php
 
-include 'Hospital.php';
+include '../models/Hospital.php';
+
 class HospitalDAO {
     private $pdo;
 
@@ -47,7 +48,7 @@ class HospitalDAO {
     }
 
     public function editar(Hospital $hospital) {
-        $sql = 'UPDATE hospitais SET nome=:nome, endereco =:endereco, lat=:lat, lng=:lng, observacoes=:observacoes WHERE id=?';
+        $sql = 'UPDATE hospitais SET nome=:nome, endereco =:endereco, lat=:lat, lng=:lng, observacoes=:observacoes WHERE id=:id';
         $sql = $this->pdo->prepare($sql);
         $sql->bindValue(':nome', $hospital->getNome());
         $sql->bindValue(':endereco', $hospital->getEndereco());
@@ -56,6 +57,7 @@ class HospitalDAO {
         $sql->bindValue(':observacoes', $hospital->getObservacoes());
         $sql->bindValue(':id', $hospital->getId());
         $sql->execute();
+        echo "dentro do editar";
         
     }
 

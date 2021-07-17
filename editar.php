@@ -12,8 +12,12 @@ $hospital = $dao->pegarId($_GET['id']);
 <br>
 <form action = "processa_edit.php" method = "POST">
   <div class="mb-3">
+    <input type="text" hidden class="form-control" name="id" value="<?php echo $_GET['id'];?>">    
+  </div>
+  <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Nome do Hospital</label>
     <input type="text" class="form-control" name="nome" value="<?php echo $hospital['nome'];?>">    
+  </div>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">Endereço</label>
     <input type="text" class="form-control" name = "endereco"value="<?php echo $hospital['endereco'];?>"  >
@@ -36,4 +40,4 @@ $hospital = $dao->pegarId($_GET['id']);
 
 
 
-</div>
+
